@@ -8,7 +8,17 @@
 
 .row {
     margin: 2px;
-    background: gold;
+    padding: 0;
+    border: solid black 0.5px;
     text-align: center;
     aspect-ratio: 1/1;
+}
+
+.row:hover {
+    background: gray;
+}
+
+#main {
+    height: 600px;
+    width: 600px;
 }
