@@ -11,6 +11,10 @@ for (let i = 0; i < columns; ++i) {
     for (let j = 0; j < rows; ++j) {
         let row = document.createElement('div'); // create row
         row.className = 'row';
+        row.addEventListener("mouseover", (e) => {
+            e.target.classList.add('color');
+            console.log(e.target.classList);
+        });
         column.appendChild(row); // append row in column
     }
     grid.appendChild(column); // append column inside grid

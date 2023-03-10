@@ -14,7 +14,7 @@
     aspect-ratio: 1/1;
 }
 
-.row:hover {
+.row.color {
     background: gray;
 }
 
