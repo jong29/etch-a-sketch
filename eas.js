@@ -13,10 +13,16 @@ for (let i = 0; i < columns; ++i) {
         row.className = 'row';
         row.addEventListener("mouseover", (e) => {
             e.target.classList.add('color');
-            console.log(e.target.classList);
         });
         column.appendChild(row); // append row in column
     }
     grid.appendChild(column); // append column inside grid
 }
 maindiv.appendChild(grid);
+
+document.getElementById("clear").addEventListener("click", () => {
+    const colored = document.querySelectorAll(".row.color");
+    colored.forEach((box) => {
+        box.classList.remove('color');
+    } );
+});
